@@ -1,0 +1,170 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 5vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,0,0.7),rgba(4,9,0,0.7)),url(blog\ banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px 80px;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1; /* occupy all the space in the row */
+    text-align: right;
+    position: relative;
+    top: -50px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px  ;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li ::after{
+    background: #f44336;
+    content: '';
+    width:0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after {
+    width: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px ;
+}
+.flex div h2{ 
+    font-size: 40px;
+    align-content: center;
+    color: #050532;
+    margin-left: 50px;
+}
+.heading h3 span{
+    font-size: 30px;
+    background-color: #EFF0A5;
+    padding: 10px 30px;
+}
+#col-4 .card,#col-4 .card hr{
+    color: aliceblue;
+    background-color: #316a53e3;
+}
+#col-4 .card h5{
+    display: flex;
+    justify-content: space-between;
+}
+.container #col-4{
+    float: left;
+    width: 33.3%;
+    margin-top: 12px;
+}
+#row2 .col-8 .card-deck{
+    float: right;
+    margin-right: 19.7%;
+    width: 74%;
+}
+#followpost{font-size: 30px;}
+#subtitle{font-size: 15px;
+margin-bottom: 30px;}
+#submit{
+    background-color: red;
+}
+#submit :hover{
+    background-color: #222;
+}
+#row1,#row2{
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.card-title{
+    font-family: 'prada';
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+.card-title:hover{
+    text-decoration: underline #222 2px;
+}
+.card-text{font-weight: 300;}
+footer{
+    margin-top: 150px;
+    font-family: 'prada';
+    font-size: 15px;
+    font-weight: lighter;
+}
+footer #links li {
+    margin: 10px;
+    padding: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+@media(max-width:700px){
+    .text-box{font-size: 12px;}
+    .nav-links ul li{
+        display: block;
+        width: 200px;
+        background-color: #f44336;
+    }
+    
+    .nav-links{
+        position: absolute;
+        height: 100vh;
+        width: 0px;
+        top: 0;
+        right: 0;
+        text-align: center;
+        z-index: 2;
+    }
+    nav .bi{
+        display: block;
+        color: #fff;
+        margin: 5px;
+        font-size: 22px;
+        position: relative;
+        top: 0px;
+        right: 60px;
+
+    }
+    nav #hide{
+        position: relative;
+        right:5px;
+        padding: 5px;
+        border: 1px solid #f44336;
+    }
+    .header{width: 100%;}
+    .flex{ margin: 1px 0 1px 0;
+        display:contents;
+        justify-items:center;
+    }
+    .flex div h2{font-size: 35px;}
+    .heading h3 span{font-size: 20px;}
+    .flex img{width: 100%;}
+    #row1{
+        display: flex;
+        justify-content:center;
+        width:100%;
+    }
+    .container #col-4 {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    #row2 .col-4,#row2 .col-8{display: none;}
+}
